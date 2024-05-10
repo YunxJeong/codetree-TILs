@@ -7,7 +7,7 @@ int main() {
     
     cin >> a;
 
-    cout << (a == 1 ? t : f);
+    cout << (a == 1 ? "t" : "f");
 
     return 0;
 }
