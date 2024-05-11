@@ -6,8 +6,8 @@ int main() {
     int n;
     cin >> n;
 
-    if(n<9) 
-        if(n%2!=0 || n == 8) cout << 31;
+    if(n<8) 
+        if(n%2!=0) cout << 31;
         else if (n==2) cout << 28;
         else cout << 30;
     else 
