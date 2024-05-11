@@ -8,12 +8,16 @@ int main() {
 
     cin >> ca >> a >> cb >> b >> cc >> c;
 
-    if(ca == 'Y' && a >= 37) cnt++;
-    if(cb == 'Y' && b >= 37) cnt++;
-    if(cc == 'Y' && c >= 37) cnt++;
-    
-    if(cnt>=2) cout<<"E";
-    else cout<<"N";
+    if(ca == 'Y' && a >= 37) 
+    {
+        if((cb == 'Y' && c >= 37)||(cc == 'Y' && c >= 37)) cout << "E";
+    }
+    else
+    {
+        if((cb == 'Y' && c >= 37)||(cc == 'Y' && c >= 37)) cout << "E";
+            cout << "E";
+        else cout << "N"
+    }
 
     return 0;
 }
