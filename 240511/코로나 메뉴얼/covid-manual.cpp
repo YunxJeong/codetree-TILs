@@ -15,7 +15,7 @@ int main() {
     }
     else
     {
-        if((cb == 'Y' && c >= 37)||(cc == 'Y' && c >= 37)) cout << "E";
+        if((cb == 'Y' && c >= 37)&&(cc == 'Y' && c >= 37)) cout << "E";
         else cout << "N";
     }
 
