@@ -7,9 +7,9 @@ int main() {
 
     cin >> a >> b >> c;
 
-    if(a > b && a < c) cout << a;
-    else if(b > a && b < c) cout << b;
+    if(a > b && a < c || a > c && a < b) cout << a;
+    else if(b > a && b < c || b > c && b < a) cout << b;
     else cout << c;
-    
+
     return 0;
 }
