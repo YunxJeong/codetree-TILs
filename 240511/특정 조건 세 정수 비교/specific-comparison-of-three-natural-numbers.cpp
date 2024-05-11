@@ -7,7 +7,7 @@ int main() {
 
     cin >> a >> b >> c;
 
-    cout << (a<b&&a<c) << " " << (a==b&&b==c);
-    
+    cout << (a<=b&&a<=c) << " " << (a==b&&b==c);
+
     return 0;
 }
