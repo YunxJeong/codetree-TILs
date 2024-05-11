@@ -6,9 +6,7 @@ int main() {
 
     cin >> a >> b >> c >> d;
 
-    if(a>c) cout << "A";
-    else if(a<c) cout << "B";
-    else if(a==c && b>d) cout <<"A";
+    if(a>c || (a==c && b>d) ) cout << "A";
     else cout << "B";
 
     return 0;
