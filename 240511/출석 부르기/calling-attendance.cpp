@@ -10,7 +10,7 @@ int main() {
     if(n==1) cout << "John";
     else if(n==2) cout << "Tom";
     else if(n==3) cout << "Paul";
-    else cout << "Vacnacy";
-    
+    else cout << "Vacancy";
+
     return 0;
 }
