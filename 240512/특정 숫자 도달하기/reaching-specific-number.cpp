@@ -15,6 +15,8 @@ int main() {
             sum += a[i];
     }
 
+    cout << fixed;
+    cout.precision(1);
     cout << sum << " " << (double)sum / i;
 
     return 0;
