@@ -13,11 +13,9 @@ int main() {
             break;
     }
 
-    i -= 1;
-
     for(i; i > 0; i--)
     {
-        cout << a[i] << " ";
+        cout << a[i - 1] << " ";
     }
 
     return 0;
