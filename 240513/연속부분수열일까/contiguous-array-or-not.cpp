@@ -42,7 +42,7 @@ int main() {
             }
         }
 
-        if(i == n1 - n2 + 1 && cnt == 0)
+        if(i == n1 - n2 && cnt == 0)
             cout << "No";
     }
 
