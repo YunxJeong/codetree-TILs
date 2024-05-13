@@ -40,8 +40,6 @@ int main() {
                 cout << "Yes";
                 break;
             }
-            else
-                cout << "No";
         }
     }
     return 0;
