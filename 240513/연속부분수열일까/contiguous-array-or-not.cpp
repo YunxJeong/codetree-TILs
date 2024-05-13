@@ -41,6 +41,10 @@ int main() {
                 break;
             }
         }
+
+        if(i == n1 - n2 + 1 && cnt == 0)
+            cout << "No";
     }
+
     return 0;
 }
