@@ -10,7 +10,7 @@ int main() {
     for(int i = 1; i <= n; i++)
     {
         cin >> num;
-        if(i % 2 == 0)
+        if(num % 2 == 0)
             cout << num << " ";
     }
     
