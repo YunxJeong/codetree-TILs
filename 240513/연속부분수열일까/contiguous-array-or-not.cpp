@@ -34,13 +34,15 @@ int main() {
                     break;
                 }
             }
+
+            if(cnt == n2)
+            {
+                cout << "Yes";
+                break;
+            }
+            else
+                cout << "No";
         }
     }
-
-    if(cnt != 0)
-        cout << "No";
-    else
-        cout << "Yes";
-
     return 0;
 }
