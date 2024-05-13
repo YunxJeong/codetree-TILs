@@ -37,10 +37,10 @@ int main() {
         }
     }
 
-    if(cnt == n2)
-        cout << "Yes";
-    else
+    if(cnt != 0)
         cout << "No";
+    else
+        cout << "Yes";
 
     return 0;
 }
