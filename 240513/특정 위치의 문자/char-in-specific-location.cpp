@@ -14,12 +14,12 @@ int main() {
         if(a[i] == c)
         {
             cout << i;
-            break;
+            //break;
         }
         else
         {
             cout << "None";
-            break;
+            //break;
         }
     }
 
