@@ -19,32 +19,38 @@ int main() {
 
     int cnt = 0;
 
-    for(int i = 0; i <= n1 - n2; i++)
+    if (n1 < n2)
+        cout << "No";
+    else
     {
-        if(a1[i] == a2[0])
+            for(int i = 0; i <= n1 - n2; i++)
         {
-            cnt++;
-            for(int j = 1; j < n2; j++)
+            if(a1[i] == a2[0])
             {
-                if(a1[i + j] == a2[j])
-                    cnt++;
-                else
+                cnt++;
+                for(int j = 1; j < n2; j++)
                 {
-                    cnt = 0;
+                    if(a1[i + j] == a2[j])
+                        cnt++;
+                    else
+                    {
+                        cnt = 0;
+                        break;
+                    }
+                }
+
+                if(cnt == n2)
+                {
+                    cout << "Yes";
                     break;
                 }
             }
 
-            if(cnt == n2)
-            {
-                cout << "Yes";
-                break;
-            }
+            if(i == n1 - n2 && cnt == 0)
+                cout << "No";
         }
-
-        if(i == n1 - n2 && cnt == 0)
-            cout << "No";
     }
+    
 
     return 0;
 }
