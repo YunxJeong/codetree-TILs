@@ -9,19 +9,22 @@ int main() {
 
     cin >> c;
 
+    int idx = -1;
+
     for(int i = 0; i < 6; i++)
     {
         if(a[i] == c)
         {
-            cout << i;
-            //break;
-        }
-        else
-        {
-            cout << "None";
-            //break;
+            idx = i;
         }
     }
+
+    if(idx != -1)
+    {
+        cout << idx;
+    }
+    else
+        cout << "None";
 
     return 0;
 }
