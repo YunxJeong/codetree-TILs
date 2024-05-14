@@ -50,26 +50,5 @@ int main() {
 
     cout << 1;
 
-    /*for(int i = idx; i > 0; i++)
-    {
-        cout << num[idx] << " ";
-
-        for(int i = 0; i < idx; i++)
-        {            
-            if(num[i] == max)
-            {
-                if(idx > i)
-                    idx = i;
-            }
-            else if(num[i] > max)
-            {
-                max = num[i];
-                idx = i;
-            }
-        }
-    }
-
-    cout << 1 ;*/
-
     return 0;
 }
