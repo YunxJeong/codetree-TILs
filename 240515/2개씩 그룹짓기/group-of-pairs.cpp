@@ -18,12 +18,12 @@ int main() {
 
     sort(a, a + 2*N);
 
-    int max = 1000;
+    int max = 0;
 
     for(int i = 0; i < N; i++)
     {
-        if(a[i] + a[N - i - 1] > max)
-            max = a[i] + a[N - i - 1];
+        if((a[i] + a[2 * N - i - 1]) > max)
+            max = a[i] + a[2 * N - i - 1];
     }
 
     cout << max;
