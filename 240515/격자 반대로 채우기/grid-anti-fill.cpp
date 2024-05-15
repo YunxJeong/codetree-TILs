@@ -7,11 +7,11 @@ int main() {
 
     cin >> n;
 
-    int a[n][n], num = 1;
+    int a[n][n], num = 1, cnt = 1;
 
     for(int i = n - 1; i >= 0; i--)
     {
-        if(i % 2 != 0)
+        if(cnt % 2 != 0)
         {
             for(int j = n - 1; j >= 0; j--)
             {
@@ -27,6 +27,8 @@ int main() {
                 num++;
             }
         }
+
+        cnt++;
     }
 
     for(int i = 0; i < n; i++)
