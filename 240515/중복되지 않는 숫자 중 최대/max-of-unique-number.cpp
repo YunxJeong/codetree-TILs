@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int N, num, a[1000] = {}, answer[1000] = {}, max = 0, cnt;
+    int N, a[1000] = {}, answer[1000] = {}, max = -1;
 
     cin >> N;
 
@@ -12,26 +12,24 @@ int main() {
         cin >> a[i];
     }
     
-    for(int i = 0, j = 0; i < N; i++)
+    for(int i = 0; i < N; i++)
     {
-        if(a[i] == answer[j])
-        {
-            answer[j] = -1;
-            continue;
-        }
-        else
-        {
-            answer[j] = a[i];
-            j++;
-        }
+        //a[i] 현재 값
 
-        cnt = j;
-    }
+        if(max < a[i])
+        {
+            int cnt = 0;
+            for(int j = 0; j < N; j++)  
+            {
+                if(a[j] == a[i])    //현재 값이 이전 값들과 같다면 cnt++
+                    cnt++;
+            }
 
-    for(int i = 0; i < cnt; i++)
-    {
-        if(answer[i] > max)
-            max = answer[i];
+            if(cnt  == 1)
+            {
+                max = a[i];
+            }
+        }
     }
 
     cout << max;
