@@ -9,7 +9,7 @@ int main() {
 
     cin >> N;
 
-    int a[N];
+    int a[N * 2];
 
     for(int i = 0; i < 2 * N; i++)
     {
@@ -18,7 +18,15 @@ int main() {
 
     sort(a, a + 2*N);
 
-    cout << a[N - 1] + a[N];
+    int max = 1000;
+
+    for(int i = 0; i < N; i++)
+    {
+        if(a[i] + a[N - i - 1] > max)
+            max = a[i] + a[N - i - 1];
+    }
+
+    cout << max;
 
     return 0;
 }
