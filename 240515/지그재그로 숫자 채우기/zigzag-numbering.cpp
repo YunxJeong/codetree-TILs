@@ -7,7 +7,7 @@ int main() {
 
     cin >> n >> m;
 
-    int a[100][100];
+    int a[n][m];
 
     for(int i = 0; i < m; i++)
     {
@@ -19,8 +19,9 @@ int main() {
             }
             else
                 a[n - j - 1][i] = num;
+
+            num++;
         }
-        num++;
     }
 
     for(int i = 0; i < n; i++)
