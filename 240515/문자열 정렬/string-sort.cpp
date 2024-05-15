@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
@@ -12,6 +13,6 @@ int main() {
     sort(str.begin(), str.end());
 
     cout << str;
-    
+
     return 0;
 }
