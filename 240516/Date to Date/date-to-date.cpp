@@ -4,7 +4,7 @@ using namespace std;
 
 int days(int m, int d)
 {
-    int sum = d;
+    int sum = d - 1;
 
     int day[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
@@ -25,7 +25,9 @@ int main() {
 
     int sum = days(m2, d2) - days(m1, d1);
 
-    cout << (sum == 0 ? 1 : sum);
+    //cout << (sum == 0 ? 1 : sum);
+
+    cout << sum;
 
     return 0;
 }
