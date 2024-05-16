@@ -8,9 +8,9 @@ int days(int m, int d)
 
     int day[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-    while(m > 0)
+    while(m - 1 > 0)
     {
-        sum += day[m];
+        sum += day[m - 1];
         m--;  
     }
     
@@ -23,11 +23,11 @@ int main() {
 
     cin >> m1 >> d1 >> m2 >> d2;
 
-    int sum = days(m2, d2) - days(m1, d1);
+    int result = days(m2, d2) - days(m1, d1) + 1;
 
     //cout << (sum == 0 ? 1 : sum);
 
-    cout << sum;
+    cout << result;
 
     return 0;
 }
