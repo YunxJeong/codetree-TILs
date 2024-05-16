@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int n, arr[200] = {}, a, b;
+    int n, arr[100] = {}, a, b;
 
     cin >> n;
 
