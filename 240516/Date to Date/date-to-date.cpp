@@ -23,7 +23,9 @@ int main() {
 
     cin >> m1 >> d1 >> m2 >> d2;
 
-    cout << days(m2, d2) - days(m1, d1);
-    
+    int sum = days(m2, d2) - days(m1, d1);
+
+    cout << (sum == 0 ? 1 : sum);
+
     return 0;
 }
