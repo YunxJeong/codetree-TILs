@@ -38,7 +38,7 @@ int main() {
     }
 
     int sum = 0;
-
+    
     for(int i = 0; i < 201; i++)
     {
         for(int j = 0; j < 201; j++)
@@ -49,6 +49,6 @@ int main() {
     }
 
     cout << sum;
-    
+
     return 0;
 }
