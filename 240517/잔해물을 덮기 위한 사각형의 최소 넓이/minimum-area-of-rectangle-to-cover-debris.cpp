@@ -53,7 +53,7 @@ int main() {
         }
     }
     
-    cout << (xmax + 1 - xmin) * (ymax + 1 - ymin);
+    cout << (cnt == 0 ? cnt : (xmax + 1 - xmin) * (ymax + 1 - ymin));
 
     return 0;
 }
