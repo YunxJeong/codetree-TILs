@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    // 여기에 코드를 작성해주세요.
+
     int n, x1, x2, y1, y2, arr[201][201] = {}, cnt = 1;
 
     cin >> n;
@@ -27,21 +27,23 @@ int main() {
             {
                 if(i % 2 == 0)
                 {
-                    arr[j][k] += cnt++;
+                    arr[j][k] += cnt;
                 }
                 else
                 {
-                    arr[j][k] -= cnt++;
+                    arr[j][k] -= cnt;
                 }                
             }
         }
+
+        cnt++;
     }
 
     int sum = 0;
 
-    for(int i = 0; i < 202; i++)
+    for(int i = 0; i < 201; i++)
     {
-        for(int j = 0; j < 202; j++)
+        for(int j = 0; j < 201; j++)
         {
             if(arr[i][j] < 0)
                 sum++;
