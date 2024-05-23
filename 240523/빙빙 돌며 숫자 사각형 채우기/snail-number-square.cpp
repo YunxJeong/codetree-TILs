@@ -2,9 +2,9 @@
 
 using namespace std;
 
-bool range(int x, int y, int n)
+bool range(int x, int y, int n, int m)
 {
-    return(0 <= x && x < n && 0 <= y && y < n);
+    return(0 <= x && x < n && 0 <= y && y < m);
 }
 
 int main() {
@@ -13,15 +13,15 @@ int main() {
 
     cin >> n >> m;
 
-    int answer[n][m] = {}, x = 0, y = 0, dir = 0;
+    int answer[100][100] = {}, x = 0, y = 0, dir = 0;
 
     answer[x][y] = 1;
 
-    for(int i = 2; i <= n * n; i++)
+    for(int i = 2; i <= n * m; i++)
     {
         int nx = x + dx[dir], ny = y + dy[dir];
 
-        if(!range(nx, ny, n) || answer[nx][ny] != 0)
+        if(!range(nx, ny, n, m) || answer[nx][ny] != 0)
         {
             dir = (dir + 1) % 4;
         }
@@ -40,7 +40,6 @@ int main() {
         }
         cout << endl;
     }
-    
 
     return 0;
 }
